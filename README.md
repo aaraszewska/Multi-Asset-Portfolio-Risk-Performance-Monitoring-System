@@ -1,36 +1,37 @@
 # Multi-Asset-Portfolio-Risk-Performance-Monitoring-System
-🎯 Project Objective
 
-The objective of this project is to simulate a portfolio performance and risk monitoring system for a multi-asset investment portfolio composed of different asset classes:
+# Multi-Asset Portfolio Risk & Performance Monitoring System
 
-Cryptocurrencies (BTC, ETH)
+## Overview
+This project simulates a portfolio monitoring and risk analytics system similar to those used in asset management, fintech and trading environments.
 
-Gold (GOLD)
+The portfolio consists of:
+- Bitcoin (BTC)
+- Ethereum (ETH)
+- Gold (GOLD)
+- NASDAQ Index
 
-NASDAQ Index (NASDAQ)
+## Features
+- Daily NAV and PnL calculation
+- Asset exposure monitoring
+- 30-day rolling volatility
+- Maximum drawdown
+- Annualised return
+- Sharpe ratio
 
-The project reflects how risk, treasury, and trading teams monitor portfolio exposure, volatility, and potential losses within a dynamic market environment.
+## Tech Stack
+- SQL Server (Window Functions)
+- Python (NumPy, Pandas)
+- Financial risk modelling concepts
 
-🏦 Financial Context
+## Risk Metrics Implemented
+- Rolling Volatility (30D)
+- Maximum Drawdown
+- Annualised Return
+- Sharpe Ratio
 
-In financial institutions such as asset management firms, fintech companies, and trading venues, portfolio monitoring is a daily process that includes tracking:
-
-Returns
-
-Profit and Loss (PnL)
-
-Net Asset Value (NAV)
-
-Asset exposure
-
-In addition, institutions analyse key risk metrics such as:
-
-Volatility
-
-Maximum drawdown
-
-Correlation between assets
-
-Value at Risk (VaR)
-
-The ultimate objective is to assess portfolio risk, stability, and resilience under different market conditions.
+## How to Recreate
+1. Run `schema.sql`
+2. Run `views.sql`
+3. Run `risk_metrics.sql`
+4. Generate sample data using `generate_data.py`
